@@ -606,7 +606,7 @@ ul {
     letter-spacing: 0.06em;
 }
 
-.mailing-button .icon{
+.mailing-button .icon {
     fill: var(--primary-white-color);
 }
 
@@ -674,6 +674,9 @@ ul {
     fill: #000000;
     cursor: pointer;
 }
+
+
+
 
 
 /* ================================================== */

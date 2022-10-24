@@ -418,7 +418,7 @@
             <form name="mailing" class="mailing-form">
                 <label class="email-label">
                     Підпишіться на розсилку
-                    <input type="email" name="email" class="email-input" placeholder="E-mail">
+                    <input type="email" name="mailing" class="email-input" placeholder="E-mail">
                 </label>
                 <button type="submit" class="mailing-button">
                     Підписатися
@@ -432,7 +432,7 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-button" data-modal-close>
+            <button class="modal-close-button" data-modal-close>
 
                 <svg class="icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-modal-close" />
@@ -440,9 +440,9 @@
             </button>
 
             <form class="form js-speaker-form">
-                <h2 class="form-title">
+                <p class="form-title">
                     Залиште свої дані, ми вам передзвонимо
-                </h2>
+                </p>
 
                 <ul class="form-list list">
                     <li class="form-field person">
@@ -466,7 +466,7 @@
                             <use href="./images/icons.svg#icon-email" />
                         </svg>
                     </li>
-                    <li class="form-field  comment">
+                    <li class="form-field comment">
                         <label for="comment" class="form-label">Коментар</label>
                         <textarea name="comment" id="comment" class="form-input comment" rows="10"
                             placeholder="Введіть текст"></textarea>
@@ -480,7 +480,7 @@
 
                         <span class="checkbox-icon"></span>
 
-                        Погоджуюся з розсилкою та приймаю <a href=""> Умови
+                        Погоджуюся з розсилкою та приймаю&nbsp<a href=""> Умови
                             договору</a>
                     </label>
                 </div>

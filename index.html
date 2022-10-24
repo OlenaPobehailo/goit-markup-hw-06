@@ -365,8 +365,8 @@
                 <address>
                     <ul class="footer-contacts list">
                         <li class="item">
-                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="address address-link link" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="address address-link link"
+                                target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
                                 Українки, 26</a>
                         </li>
                         <li class="item">
@@ -414,6 +414,19 @@
                     </li>
                 </ul>
             </div>
+
+            <form name="mailing" class="mailing-form">
+                <label class="email-label">
+                    Підпишіться на розсилку
+                    <input type="email" name="email" class="email-input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="mailing-button">
+                    Підписатися
+                    <svg>
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 
@@ -429,6 +442,25 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <!-- =============================================== -->
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
+    <!-- =============================================== -->
+
 </body>
 
 </html>

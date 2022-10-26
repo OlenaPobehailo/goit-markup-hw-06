@@ -101,7 +101,6 @@ ul {
 
 .site-nav .link.current {
     position: relative;
-
 }
 
 .site-nav .link.current::after {
@@ -213,6 +212,7 @@ ul {
     line-height: 1.16;
     text-align: center;
 }
+
 
 
 /*  Solutions section*/
@@ -355,6 +355,7 @@ ul {
 }
 
 
+
 /* Team section */
 
 .team-section {
@@ -424,6 +425,8 @@ ul {
     background-color: var(--accent-color);
     border-radius: 50%;
 }
+
+
 
 /* Client section */
 
@@ -545,41 +548,47 @@ ul {
 }
 
 
-
-.mailing-form {
+.mailing {
     margin-top: 12px;
     height: 86px;
+}
 
+.mailing-form {
     display: flex;
     gap: 12px;
 }
 
-.email-label {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+.mailing .text {
     color: #FFFFFF;
 
-    font-family: 'Roboto';
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+.mailing-form {
+    margin-top: 12px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .email-input {
     width: 358px;
     height: 50px;
     border-radius: 4px;
-
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: inherit;
+    color: var(--primary-white-color)
+}
 
+.email-input::placeholder {
     font-size: 16px;
     line-height: 1.25;
-
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -607,6 +616,7 @@ ul {
 .mailing-button .icon {
     fill: var(--primary-white-color);
 }
+
 
 
 /*   Modal window  */
@@ -722,7 +732,7 @@ ul {
     line-height: 1.71;
 }
 
-.form-field.policy a {
+.form-field.policy .link {
     color: var(--accent-color);
 }
 
@@ -803,7 +813,6 @@ ul {
     height: 15px;
     margin-right: 8px;
     background-image: url("../images/icons/check.svg");
-
 }
 
 .checkbox:checked+.checkbox-icon {

@@ -40,20 +40,17 @@
                     <a href="mailto:info@devstudio.com" class="email link">
                         <svg class="icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope" />
-                        </svg>
-                        info@devstudio.com</a>
+                        </svg> info@devstudio.com</a>
                 </li>
                 <li class="item">
                     <a href="tel:+380961111111" class="tel link">
                         <svg class="icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone" />
-                        </svg>
-                        +38 096 111 11 11</a>
+                        </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
-
 
     <main>
         <section class="solutions">
@@ -415,18 +412,22 @@
                 </ul>
             </div>
 
-            <form name="mailing" class="mailing-form">
-                <label class="email-label">
+            <div class="mailing">
+                <p class="text">
                     Підпишіться на розсилку
-                    <input type="email" name="mailing" class="email-input" placeholder="E-mail">
-                </label>
-                <button type="submit" class="mailing-button">
-                    Підписатися
-                    <svg class="icon">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
-            </form>
+                </p>
+                <form name="mailing" class="mailing-form">
+                    <label class="email-label">
+                        <input type="email" name="mailing" class="email-input" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="mailing-button">
+                        Підписатися
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -477,11 +478,8 @@
                     <label class="form-label checkbox-label">
 
                         <input type="checkbox" name="policy" class="form-input checkbox">
-
                         <span class="checkbox-icon"></span>
-
-                        Погоджуюся з розсилкою та приймаю&nbsp<a href=""> Умови
-                            договору</a>
+                        <span>Погоджуюся з розсилкою та приймаю&nbsp;</span> <a href="" class="link"> Умови договору</a>
                     </label>
                 </div>
                 <button type="submit" class="submit-button">Відправити</button>
@@ -490,25 +488,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
-    <!-- =============================================== -->
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script>
-    <!-- =============================================== -->
-
 </body>
 
 </html>

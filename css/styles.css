@@ -567,7 +567,7 @@ ul {
 }
 
 .mailing-form {
-    margin-top: 12px;
+    margin-top: 20px;
 
     display: flex;
     align-items: flex-start;
@@ -689,7 +689,7 @@ ul {
     fill: var(--accent-color);
 }
 
-.form {
+.form-wrapper {
     padding: 40px;
 }
 
